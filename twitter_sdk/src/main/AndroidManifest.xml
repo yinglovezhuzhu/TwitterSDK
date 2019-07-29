@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.owen.twitter.sdk" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity android:name=".auth.TwitterOAuthActivity"
+            android:theme="@style/LoginActivityTheme"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize"/>
+    </application>
+
+</manifest>
