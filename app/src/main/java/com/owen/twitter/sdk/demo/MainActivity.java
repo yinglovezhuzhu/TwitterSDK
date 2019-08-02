@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                intent.setPackage("com.twitter.android");
                 intent.setClassName("com.twitter.android", "com.twitter.composer.ComposerActivity");
                 startActivity(intent);
+
             }
         }
     }
@@ -54,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 TwitterSDK.login(this, new Callback<TwitterSession>() {
                     @Override
                     public void onResult(int code, String msg, TwitterSession data) {
-                        Toast.makeText(MainActivity.this, data.toString(), Toast.LENGTH_LONG).show();
-                        LogUtils.e(String.format("Login Result\ncode = %d\nmsg = %s\ndata = %s", code, msg, data.toString()));
+                        Toast.makeText(MainActivity.this, null == data ? "Login failed" : data.toString(), Toast.LENGTH_LONG).show();
+                        LogUtils.e(String.format("Login Result\ncode = %d\nmsg = %s\ndata = %s", code, msg, null == data ? "" : data.toString()));
                     }
                 });
 

@@ -19,7 +19,8 @@ import androidx.annotation.NonNull;
 public class TwitterSDK {
 
     public static void login(@NonNull Activity activity, final Callback<TwitterSession> callback) {
-        TwitterAuthClient authClient = new TwitterAuthClient("J4ynteRyFzTtqcYJlCASGo39I", "UutETxA6QQmSEl7pmfKS0Tv2dSxh88RzO2300Cp4pngL1tEKbh");
+//        TwitterAuthClient authClient = new TwitterAuthClient("J4ynteRyFzTtqcYJlCASGo39I", "UutETxA6QQmSEl7pmfKS0Tv2dSxh88RzO2300Cp4pngL1tEKbh");
+        TwitterAuthClient authClient = new TwitterAuthClient("SLTsEh1c61Um0gRArM8MMYNdk", "mQxNdMLMpvWXNR2tJZ9qblHxct7YI3thgYMvxWnA5Tq71py4Ni");
         authClient.authorize(activity, callback);
     }
 
