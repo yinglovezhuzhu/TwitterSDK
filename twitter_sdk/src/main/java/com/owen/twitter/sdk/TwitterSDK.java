@@ -1,11 +1,13 @@
 package com.owen.twitter.sdk;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 
 import com.owen.twitter.sdk.auth.TwitterAuthClient;
 import com.owen.twitter.sdk.auth.TwitterSession;
 import com.owen.twitter.sdk.common.CallbackManager;
+import com.owen.twitter.sdk.core.TwitterCore;
 import com.owen.twitter.sdk.share.entity.ShareContent;
 
 import androidx.annotation.NonNull;
@@ -18,9 +20,13 @@ import androidx.annotation.NonNull;
  */
 public class TwitterSDK {
 
+
+    public static void init(@NonNull Context context) {
+        TwitterCore.getInstance().init(context);
+    }
+
     public static void login(@NonNull Activity activity, final Callback<TwitterSession> callback) {
-//        TwitterAuthClient authClient = new TwitterAuthClient("J4ynteRyFzTtqcYJlCASGo39I", "UutETxA6QQmSEl7pmfKS0Tv2dSxh88RzO2300Cp4pngL1tEKbh");
-        TwitterAuthClient authClient = new TwitterAuthClient("SLTsEh1c61Um0gRArM8MMYNdk", "mQxNdMLMpvWXNR2tJZ9qblHxct7YI3thgYMvxWnA5Tq71py4Ni");
+        TwitterAuthClient authClient = new TwitterAuthClient("J4ynteRyFzTtqcYJlCASGo39I", "UutETxA6QQmSEl7pmfKS0Tv2dSxh88RzO2300Cp4pngL1tEKbh");
         authClient.authorize(activity, callback);
     }
 

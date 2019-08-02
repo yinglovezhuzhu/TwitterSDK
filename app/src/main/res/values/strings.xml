@@ -3,12 +3,12 @@
 
     <!-- Twitter -->
     <!-- Consumer key(API key)，请将相应值改为游戏相关值 -->
-    <string name="rastar_twitter_api_key">SLTsEh1c61Um0gRArM8MMYNdk</string>
+    <string name="twitter_api_key">SLTsEh1c61Um0gRArM8MMYNdk</string>
     <!-- Consumer secret key(API secret key)，请将相应值改为游戏相关值 -->
-    <string name="rastar_twitter_api_secret_key">mQxNdMLMpvWXNR2tJZ9qblHxct7YI3thgYMvxWnA5Tq71py4Ni</string>
+    <string name="twitter_api_secret_key">mQxNdMLMpvWXNR2tJZ9qblHxct7YI3thgYMvxWnA5Tq71py4Ni</string>
 
 <!--        &lt;!&ndash; Consumer key(API key)，请将相应值改为游戏相关值 &ndash;&gt;-->
-<!--        <string name="rastar_twitter_api_key">J4ynteRyFzTtqcYJlCASGo39I</string>-->
+<!--        <string name="twitter_api_key">J4ynteRyFzTtqcYJlCASGo39I</string>-->
 <!--        &lt;!&ndash; Consumer secret key(API secret key)，请将相应值改为游戏相关值 &ndash;&gt;-->
-<!--        <string name="rastar_twitter_api_secret_key">UutETxA6QQmSEl7pmfKS0Tv2dSxh88RzO2300Cp4pngL1tEKbh</string>-->
+<!--        <string name="twitter_api_secret_key">UutETxA6QQmSEl7pmfKS0Tv2dSxh88RzO2300Cp4pngL1tEKbh</string>-->
 </resources>

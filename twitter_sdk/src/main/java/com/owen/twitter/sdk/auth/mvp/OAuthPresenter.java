@@ -24,7 +24,8 @@ import androidx.annotation.NonNull;
  */
 public class OAuthPresenter {
 
-    private static final String CALLBACK_URL = "twittersdk://callback";
+//    private static final String CALLBACK_URL = "twittersdk://callback";
+    private static final String CALLBACK_URL = "rsdktwitter://callback";
     /**
      * 请求API地址：Twitter request token
      */
